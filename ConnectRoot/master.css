@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.logo {
+  background: white;
+  border: 5mm;
+  border-radius: 10%;
+  width: 50px;
+  height: 50px;
+}
+
 .bg-light {
   background-color: white !important;
 }
@@ -7,6 +15,11 @@
 .card {
   -webkit-box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-img-top {
   -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -19,6 +32,11 @@
 .card:hover {
   -webkit-box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card-img-top {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 body {
@@ -39,21 +57,14 @@ strong {
   text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-.logo {
-  background: white;
-  border: 5mm;
-  border-radius: 10%;
-  width: 50px;
-  height: 50px;
-}
-
 .navbar {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 .navbar .nav-link {
-  color: #fff;
+  color: #5494e7 !important;
+  text-shadow: 0px 1px 1px grey;
 }
 
 .navbar .nav-link:hover,
@@ -68,7 +79,7 @@ strong {
 
 /* Change navbar styling on scroll */
 .navbar.active {
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   -webkit-box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);

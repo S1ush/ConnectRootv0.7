@@ -6,6 +6,14 @@ $font-color: #4bc8a2;
 // $font-style:  muli;
 $font-style: 'Montserrat', sans-serif;;
 
+.logo {
+  background: white;
+  border: 5mm;
+  border-radius: 10%;
+  width: 50px;
+  height: 50px;
+}
+
 
 .bg-light{
     background-color: white !important;
@@ -15,7 +23,9 @@ $font-style: 'Montserrat', sans-serif;;
     
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    
+}
+.card-img-top{
+  transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .card-text{
     font-weight: 300;
@@ -23,7 +33,13 @@ $font-style: 'Montserrat', sans-serif;;
 }
 .card:hover{
     box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.2)  ;
+    .card-img-top{
+      transform: scale(1.2);
+    }
+    
 }
+
+
 
 body{
     font-family: $font-style;
@@ -52,7 +68,8 @@ strong{
 }
 
 .navbar .nav-link {
-    color: #fff;
+    color: rgb(84, 148, 231) !important;
+    text-shadow: 0px 1px 1px grey;
 }
 
 .navbar .nav-link:hover,
@@ -68,7 +85,8 @@ strong{
 
 /* Change navbar styling on scroll */
 .navbar.active {
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
