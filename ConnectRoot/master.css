@@ -8,6 +8,20 @@
   height: 50px;
 }
 
+.btn-outline-info {
+  border-color: #8d6add;
+  color: #8966db;
+  font-weight: 500;
+}
+
+.btn-outline-info:hover {
+  background-color: #8966db;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .bg-light {
   background-color: white !important;
 }
@@ -47,6 +61,11 @@ body {
   text-shadow: 1px 2px 2px #288569 !important;
   color: #4bc8a2 !important;
   font-family: "Montserrat", sans-serif;
+}
+
+.display-4 {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 strong {

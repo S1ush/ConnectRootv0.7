@@ -14,6 +14,19 @@ $font-style: 'Montserrat', sans-serif;;
   height: 50px;
 }
 
+.btn-outline-info{
+  border-color: rgb(141, 106, 221) ;
+  color: rgb(137, 102, 219);
+  font-weight: 500;
+  
+}
+.btn-outline-info:hover{
+  background-color: rgb(137, 102, 219);
+  
+}
+a:hover{
+  text-decoration: none;
+}
 
 .bg-light{
     background-color: white !important;
@@ -51,6 +64,10 @@ body{
     color: $font-color !important;
     font-family:$font-style;
 }
+.display-4{
+  transition: all .4s ease-in-out;
+}
+
 
 strong{
     text-shadow: 1px 1px 2px  darken($color:$font-color, $amount: 10) !important;
