@@ -1,6 +1,6 @@
 $(function onscroll() {
     $(window).on('scroll', function () {
-        if ( $(window).scrollTop() > 10 ) {
+        if ( $(window).scrollTop() > 5 ) {
             console.log("active length")
             $('.navbar').addClass('active');
         } else {
