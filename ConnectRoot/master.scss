@@ -7,11 +7,13 @@ $font-color: #4bc8a2;
 $font-style: 'Montserrat', sans-serif;;
 
 .logo {
-  background: white;
-  border: 5mm;
+  
   border-radius: 10%;
-  width: 50px;
-  height: 50px;
+  width: 6em;
+  transition: all 0.3 ease-in-out;
+
+
+  
 }
 
 .btn-outline-info{
@@ -81,17 +83,21 @@ strong{
 
 
 .navbar {
-    transition: all 0.4s;
+    transition-property: all;
+    transition-duration: .3s;
 }
 
 .navbar .nav-link {
-    color: rgb(84, 148, 231) !important;
-    text-shadow: 0px 1px 1px grey;
+    font-size: 1.1rem;
+    color: rgb(225, 235, 233);
+    text-shadow: 0px 1px 2px grey;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: #fff;
+    
+    color: #4e4747;
     text-decoration: none;
 }
 
@@ -102,13 +108,19 @@ strong{
 
 /* Change navbar styling on scroll */
 .navbar.active {
+    .logo{
+      transition: all .3s ease-in-out ;
+      width: 4em;
+    }
+    transition: all .3s ease-in-out;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.active .nav-link {
-    color: #555;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: white;
 }
 
 .navbar.active .nav-link:hover,
@@ -442,6 +454,4 @@ background-color: blueviolet;
   background-color: #4B88A2;
   color: #fff;
 }
-
-// view_products css starts here
 
