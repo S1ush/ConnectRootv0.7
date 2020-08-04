@@ -1,10 +1,6 @@
 $(function onscroll() {
     $(window).on('scroll', function () {
-<<<<<<< Updated upstream
         if ( $(window).scrollTop() > 5 ) {
-=======
-        if ( $(window).scrollTop() > 10 ) {
->>>>>>> Stashed changes
             console.log("active length")
             $('.navbar').addClass('active');
         } else {
