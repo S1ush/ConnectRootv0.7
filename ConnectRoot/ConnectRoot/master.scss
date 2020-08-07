@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$enable-gradients: true;
+$bg-color: #E0E0E0;
+$font-color: #4bc8a2;
+// $font-style:  muli;
+$font-style: 'Montserrat', sans-serif;;
+
+.logo {
+  
+  border-radius: 10%;
+  width: 6em;
+  transition: all 0.3 ease-in-out;
+
+
+  
+}
+
+.btn-outline-info{
+  border-color: rgb(141, 106, 221) ;
+  color: rgb(137, 102, 219);
+  font-weight: 500;
+  
+}
+.btn-outline-info:hover{
+  background-color: rgb(137, 102, 219);
+  
+}
+a:hover{
+  text-decoration: none;
+}
+
+.bg-light{
+    background-color: white !important;
+}
+
+.card{
+    
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card-img-top{
+  transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card-text{
+    font-weight: 300;
+    font-size: 0.9em;
+}
+.card:hover{
+    box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.2)  ;
+    .card-img-top{
+      transform: scale(1.2);
+    }
+    
+}
+
+
+
+body{
+    font-family: $font-style;
+    // font-family: 'Muli', sans-serif;
+}
+
+.navbar-brand,strong,.display-3,.display-4 {
+    text-shadow: 1px 2px 2px  darken($color:$font-color, $amount: 20) !important;
+    color: $font-color !important;
+    font-family:$font-style;
+}
+.display-4{
+  transition: all .4s ease-in-out;
+}
+
+
+strong{
+    text-shadow: 1px 1px 2px  darken($color:$font-color, $amount: 10) !important;
+}
+.embod,.display-4{
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+
+
+.navbar {
+    transition-property: all;
+    transition-duration: .3s;
+}
+
+.navbar .nav-link {
+    font-size: 1.1rem;
+    color: rgb(225, 235, 233);
+    text-shadow: 0px 1px 2px grey;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    
+    color: #4e4747;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    .logo{
+      transition: all .3s ease-in-out ;
+      width: 4em;
+    }
+    transition: all .3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: white;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
+
+
+
+
+
+.middle{
+background-color: blueviolet;
+}
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url(img\\bed-of-sunflower-1287124.jpg);           
+    /* Set a specific height */
+    min-height: 300px;
+    /* Create the parallax scrolling effect */
+    background-attachment:fixed ;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
+
+.bottle{
+    
+    position: relative;
+    top: 4em;
+    height:40rem;
+    z-index: 2 !important;
+}
+.headline{
+ padding-top: 15rem;
+}
+.opening{
+    display: block;
+    width: 100%;
+    background: linear-gradient(#ffdd00, #9bd53d) !important;
+    z-index: 0;
+   
+}
+
+.waves{ 
+     background: transparent;
+     z-index: 3 !important;
+     filter: drop-shadow(7px 4px 10px black);
+
+}
+
+.middle{
+    background-color: royalblue !important;
+}
+
+.jumbotron{
+    margin-bottom:0 !important;
+}
+
+.gallery{
+    position: relative;
+    background-image: url(img\\coverProduct.jpg);
+    background-size:cover;
+    background-position: no-repeat;
+    overflow: hidden;
+
+    .back{
+        backdrop-filter: blur(5px) ;
+        background-color: rgba(0, 0, 0, 0.2);   
+
+    }
+
+    
+      div{
+         
+          padding: 3em 2em;
+          .glide{
+              padding: 0;
+              margin: 0;
+          }
+          h1{
+              letter-spacing:0.07em ;
+          }
+          p{
+              padding: .5em .5em;
+              font-size: 1.5em;
+              line-height: 1.65em;
+          }
+        
+      }
+}
+
+.glide__slide{
+    filter: blur(1.5px);
+    opacity: 1;
+
+}
+
+.glide__slide--active{
+    // transform: rotate(deg(30)) ;
+    filter: none;
+}
+
+
+
+    .slide{
+        border-radius: 10px;
+        width: 100% ;
+        background-attachment: fixed;
+        background-position: cover;
+
+    }
+
+
+    .imgs{
+        
+        display: block; text-align: center;
+    }
+
+    // About Us //?/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    .aboutus{
+        background-image: url(img\\about-us\\banner-blur.jpg);  
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        
+        
+        width: 100%;
+        height: 65vh;
+    }
+    .banner-text{
+        
+      padding-top: 10em;
+
+    }
+    .about-waves{
+        position: relative;
+        top: -5em;
+        @media screen and (max-width: 1177px) {
+            position: relative;
+            top: 8%;
+          }
+          @media screen and (max-width:700px) {
+              display: none;
+              
+          }
+        
+        
+    }
+    .team{
+        color: #4bc8a2 !important;
+        display: flex;
+        img{
+            justify-content: center;
+            width: 100%;
+            height: fit-content;
+            
+            
+        }
+
+        @media screen and (max-width: 992px) {
+            img {
+              height: auto;
+            }
+          }
+        .lead{
+            color: #4bc8a2 !important;
+
+        }
+    }
+
+    .bar::after{
+        content: "";
+        width: 3em;
+        height: .2em;
+        position: absolute;
+        background-color: darken($color: rgb(135, 235, 227), $amount: 20);
+    }
+
+
+    .des-title{
+        position: relative;
+
+        p{
+
+            color: $font-color;
+            font-weight: 400;
+            font-size: 1.2em;
+        }
+        .bar::before{
+            content: "";
+            width: 4em;
+            height: .2em;
+            border-radius: 5em;
+            position: absolute;
+            background-color: darken($color: rgb(135, 235, 227), $amount: 20);
+            top: -2px;
+            left:-0.2em;
+        }
+        .bar::after{
+            display: none;
+        }
+        
+        
+    }
+
+
+    // add for surushti
+    .contact-form {
+  margin-top: 30px;
+  margin-bottom: 90px;
+  background-color: #fff;
+}
+
+.contact-seg-one {
+  padding: 30px;
+}
+
+.contact-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  width: 100%;
+}
+
+/* footer css */
+
+.sect-one {
+  background-color: #353333ea;
+  color: #fff;
+  padding-top: 10px;
+  line-height: 25px;
+  font-weight: lighter;
+}
+
+.segment-one {
+  padding-bottom: 25px;
+}
+.segment-one h2{
+  font-size: 25px;
+  font-weight: 350;
+  text-transform: uppercase;
+}
+
+.segment-one h2:before {
+  content: '|';
+  color: #4B88A2; 
+  padding-right: 10px;
+}
+
+.segment-two {
+  padding-bottom: 25px;
+}
+
+.segment-two h2{
+  font-size: 25px;
+  font-weight: 350;
+  text-transform: uppercase;
+}
+
+.segment-two h2:before {
+  content: '|';
+  color: #4B88A2; 
+  padding-right: 10px;
+}
+
+.segment-two a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.segment-three {
+  padding-bottom: 25px;
+}
+
+.segment-three h2{
+  font-size: 25px;
+  font-weight: 350;
+  text-transform: uppercase;
+}
+
+.segment-three h2:before {
+  content: '|';
+  color: #4B88A2; 
+  padding-right: 10px;
+}
+
+.segment-four {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  padding-bottom: 25px;
+}
+
+.segment-four h2{
+  font-size: 25px;
+  font-weight: 350;
+  text-transform: uppercase;
+}
+
+.segment-four h2:before {
+  content: '|';
+  color: #4B88A2; 
+  padding-right: 10px;
+}
+
+.sect-two {
+  background-color: #4B88A2;
+  color: #fff;
+}
+
