@@ -38,17 +38,17 @@
 <title>Product Pricing</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-3">
         <h3 class="display-4">Product Pricing</h1>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid p-3">
         <a href="add_products.php"><button class="btn btn-success">Back</button></a>
     </div>
     <?php 
         $conn = mysqli_connect('localhost', 'root', '', 'connect_roots');
         if(isset($_GET['view'])) {
             $id = $_GET['view'];
-            $sql = "SELECT qty, price FROM quantity WHERE product_id = '$id';";
+            $sql = "SELECT qty, price, product_link FROM quantity WHERE product_id = '$id';";
             $result = mysqli_query($conn, $sql);
     ?>
     <div class="container-fluid">
@@ -57,6 +57,7 @@
                 <tr>
                     <th>Quantity</th>
                     <th>Price</th>
+                    <th>Product Link</th>
                 </tr>
                 <?php 
                     while($row = $result->fetch_assoc()):
@@ -64,6 +65,7 @@
                 <tr>
                     <td><?php echo $row['qty'];?></td>
                     <td><?php echo $row['price'];?></td>
+                    <td><?php echo $row['product_link'];?></td>
                 </tr>
                     <?php endwhile; }?>
             </thead>

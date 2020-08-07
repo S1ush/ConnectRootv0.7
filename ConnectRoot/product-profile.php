@@ -6,9 +6,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+     <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <title>Product Info</title>
     <link rel="stylesheet" href="master.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
     <style>
         .card-header{
             padding: 0em 0em 0.1em 0em;
@@ -24,7 +31,7 @@
         
 
         body{
-            padding-top: 50px;
+            padding-top: 60px;
             background-color: whitesmoke;
             font-family: muli;
             
@@ -67,9 +74,8 @@
       <!-- navbar start -->
           <nav class="navbar-scroll navbar navbar-expand-lg fixed-top ">
               <div class="container-fluid ">
-                  <a href="#" class="navbar-brand text-uppercase" >
+                  <a href="index2.php" class="navbar-brand text-uppercase" >
                       <img src="img/Brand_Logo.png" alt="" class="logo">
-                      ConnectRoots
                   </a>
                   <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
                   
@@ -118,52 +124,56 @@
                                 <img src="<?php echo 'img/product-images/'.$row['product_img'] ?>" alt="">
 
                                 </div>
-                                    <div class="col-md-6">
+                                <div class="col-md-6">
                                         <h4 class="font-italic mb-4"><?php echo $row['product_name'];?></h4>
                                         <div class="bg-light row d-flex justify-content-around text-center">
                                             <div class=" flex-column   ">
-                                                <div class="col-md-4 "><p class="text-monospace bar " >Available:</p></div>
+                                                <div class="col-md-4 "><p class="text-monospace bar " >Quantity:</p></div>
                                                 <?php 
-                                                    $query = "SELECT qty, price FROM quantity WHERE product_id='$id';";
+                                                    $query = "SELECT * FROM quantity WHERE product_id='$id';";
                                                     $res = mysqli_query($conn, $query);
                                                     
-                                                    $qty = array();
+                                                    $quantity = array();
                                                     $price = array();
+                                                    $link = array();
 
                                                     while($row_1 = mysqli_fetch_assoc($res)) {
-                                                        array_push($qty, $row_1['qty']);
+                                                        array_push($quantity, $row_1['qty']);
                                                         array_push($price, $row_1['price']);
+                                                        array_push($link, $row_1['product_link']);
                                                     }
-
-                                                    foreach($qty as $element):
                                                  ?>
-                                                <div class="col-md-4"><p><?php echo $element?></p></div>
-                                                    <?php endforeach;?>
+                                                 
+                                                <div class="col-md-4">
+                                                    <?php foreach($quantity as $element): ?>
+                                                        <div class="col-md-4 pt-2"><p><?php echo $element?></p></div>
+                                                    <?php endforeach; ?>
+                                                </div>
                                                 
 
                                             </div>
                                             <div class="flex-column ">
                                                 <div class="col-md-4"><p class="text-monospace bar ">Price:</p></div>
-                                                <?php 
-                                                    foreach($price as $element):
-                                                ?>
-                                                <div class="col-md-4"><p><?php echo $element?></p></div>
-                                                    <?php endforeach;?>
-                                                
-
+                                                <?php foreach($price as $element): ?>
+                                                        <div class="col-md-4 pt-2"><p>₹<?php echo $element?></p></div>
+                                                <?php endforeach; ?>
+                                            </div>
+                                            <div class="flex-column ">
+                                                <div class="col-md-4"><p class="text-monospace bar ">Link:</p></div>
+                                                <?php foreach($link as $key => $value):?>
+                                                        <div class="col-md-4 pb-2"><a href="<?php echo $value?>" id="p-link" name="p-link"><button class="btn btn-block btn-outline-info" type="button" onclick="" style="width:100px"><img style="width: 1.5em; color: coral;" src="img/icons/amazon-yellow.png"/>Buy</button></a></div>
+                                                <?php endforeach; ?>
                                             </div>
                                     </div>
-                                    
-                                    <div class="container">
+
+                                    <!-- product link -->
+                                    <!-- <div class="container">
                                       <div class="row d-flex justify-content-center">
-                                        <div class="col-md-8 ">
-                                          
-                                          <a href="<?php echo $row['product_link'];?>"><button class="btn btn-block btn-outline-info" type="button" onclick=""><img style="width: 1.5em; color: coral;" src="img/icons/amazon-yellow.png"/> Shop on  Amazon  </button></a>
-                                        </div>
-                                      
-                                       
+                                        <div class="col-md-8 "> 
+                                          <a href="" id="p-link" name="p-link"><button class="btn btn-block btn-outline-info" type="button" onclick=""><img style="width: 1.5em; color: coral;" src="img/icons/amazon-yellow.png"/> Shop on  Amazon  </button></a>
+                                        </div>                                       
                                       </div>
-                                    </div>
+                                    </div> -->
                               
 
                                  <div class="description">
@@ -262,7 +272,7 @@
     </div>
     </section>
     <section class="sect-two">
-        <center class="">Copyright@ ...</center> 
+        <center class="">Developed by YB & ST</center> 
     </section>
 </footer>
   
@@ -270,11 +280,7 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-     <script type="text/javascript" src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
  
 </body>
 </html>

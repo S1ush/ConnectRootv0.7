@@ -40,7 +40,6 @@
 
                         <a href="index2.html" class="navbar-brand  text-uppercase" >
                             <img src="img/Brand_Logo.png" alt="" class="logo">
-                            ConnectRoots
                         </a>
                     </div>
                     <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
@@ -358,7 +357,7 @@
     </div>
     </section>
     <section class="sect-two text-center">
-        Copyright@ ... 
+        Developed by YB & ST
     </section>
 </footer>
 <!-- footer ends -->

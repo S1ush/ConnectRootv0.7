@@ -38,7 +38,7 @@
     <!-- jQuery scripts -->
     <script type="text/javascript">
         $(document).ready(function() {
-            var html = '<tr><td><input type="text" class="form-control" name="quantity[]" id="quantity"></td><td><input type="text" class="form-control" name="price[]" id="price"></td><td><input type="button" class="btn btn-danger" id="remove" name="remove" value="Remove"></td></tr>';
+            var html = '<tr><td><input type="text" class="form-control" name="quantity[]" id="quantity"></td><td><input type="text" class="form-control" name="price[]" id="price"></td><td><input type="text" class="form-control" name="p_link[]" id="p_link"></td><td><input type="button" class="btn btn-danger" id="remove" name="remove" value="Remove"></td></tr>';
             
             var max_field = 5;
             var x = 1;
@@ -74,7 +74,6 @@
                     <tr>
                         <th>Image</th>
                         <th>Name</th>
-                        <th>Link</th>
                         <th>Description</th>
                         <th>Features</th>
                         <th>Benefits</th>
@@ -88,7 +87,6 @@
                 <tr>
                     <td><img src="<?php echo 'img/product-images/'.$row['product_img'] ?>" width="90" height="90" alt=""> </td>
                     <td><?php echo $row['product_name'];?></td>
-                    <td style="word-wrap: break-word"><?php echo $row['product_link'];?></td>
                     <td><?php echo $row['product_desc'];?></td>
                     <td><?php echo $row['features'];?></td>
                     <td><?php echo $row['benefits'];?></td>
@@ -97,14 +95,24 @@
                         class="btn btn-warning">View</a>
                     </td>
                     <td colspan="2">
-                        <a href="insert_product.php?delete=<?php echo $row['product_id']; ?>" 
+                        <a href="add_products.php?delete=<?php echo $row['product_id']; ?>" 
                         class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
                     <?php endwhile; ?>
             </table>
         </div>
-        
+        <?php 
+            if(isset($_GET['delete'])) {
+                $id = $_GET['delete'];
+                $sql = "DELETE FROM products WHERE product_id= '$id';";
+            
+                if (mysqli_query($conn, $sql)) {
+                    $msg = "Product has been deleted from database";
+                    $msg_class = "alert-danger";
+                }
+            }
+        ?>
 
 
         <div class="row justify-content-center">
@@ -126,12 +134,6 @@
                     <label for="p_img" class="col-sm-2 col-form-label">Product Image</label>
                     <div class="col-sm-10">
                         <input type="file" class="form-control" id="p_img" name="p_img">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="p_link" class="col-sm-2 col-form-label">Product Purchase Link</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="p_link" name="p_link">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -159,11 +161,13 @@
                             <tr>
                                 <th>Quantity</th>
                                 <th>Price</th>
+                                <th>Product Link</th>
                                 <th>Add or Remove</th>
                             </tr>
                             <tr>
                                 <td><input type="text" class="form-control" name="quantity[]"></td>
                                 <td><input type="text" class="form-control" name="price[]"></td>
+                                <td><input type="text" class="form-control" name="p_link[]"></td>
                                 <td><input type="button" class="btn btn-warning" value="Add" id="add" name="add"></button></td>
                             </tr>
                         </table>

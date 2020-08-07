@@ -36,7 +36,7 @@
     <!-- styling for the page start-->
     <style>
         body {
-            padding-top: 50px;
+            padding-top: 60px;
             background: whitesmoke;
         }
         
@@ -74,9 +74,9 @@
                 <div class="container-fluid ">
                     <div class="">
 
-                        <a href="index2.html" class="navbar-brand  text-uppercase" >
+                        <a href="index2.php" class="navbar-brand  text-uppercase" >
                             <img src="img/Brand_Logo.png" alt="" class="logo">
-                            ConnectRoots
+                            <!-- ConnectRoots -->
                         </a>
                     </div>
                     <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
@@ -100,7 +100,7 @@
         <div class="col">
         <!-- Tabs content -->
             <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="tab-pane fade shadow rounded bg-white show active p-4" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                     <h3 class="display-4 text-center">Our Products</h3>
                     <br>
                     <div class="row row-cols-1 row-cols-md-3">
@@ -169,7 +169,7 @@
     </div>
     </section>
     <section class="sect-two text-center">
-        Copyright@ ...
+    Developed by YB & ST
     </section>
     </footer>
     <!-- footer ends -->

@@ -4,10 +4,10 @@ $msg = "";
 $msg_class = "";
 $p_name = "";
 $p_img = "";
-$p_link = "";
 $desc = "";
 $features = "";
 $benefits = "";
+$p_link = array();
 $quantity = array();
 $price = array();
 $change = "";
@@ -15,8 +15,8 @@ $change = "";
 $conn = mysqli_connect("localhost", "root", "", "connect_roots");
 
 if (isset($_POST['save'])){
-    $p_name = $_POST['p_name'];
-    $p_link = $_POST['p_link'];
+    // values of the products table
+    $p_name = $_POST['p_name'];    
     $desc = $_POST['description'];
     $features = $_POST['features'];
     $benefits = $_POST['benefits'];
@@ -25,6 +25,7 @@ if (isset($_POST['save'])){
     // values of the quantity table
     $quantity = $_POST['quantity'];
     $price = $_POST['price'];
+    $p_link = $_POST['p_link'];
 
     // for image upload set target directory
     $target_dir = "img/product-images/";
@@ -46,14 +47,14 @@ if (isset($_POST['save'])){
     
     if (empty($error)) {
         if(move_uploaded_file($_FILES["p_img"]["tmp_name"], $target_file)) {
-            $sql = "INSERT INTO products (product_name, product_link, product_desc, features, benefits, product_img) VALUES('$p_name', '$p_link', '$desc', '$features', '$benefits', '$p_img')";
+            $sql = "INSERT INTO products (product_name, product_desc, features, benefits, product_img) VALUES('$p_name', '$desc', '$features', '$benefits', '$p_img');";
             
             if(mysqli_query($conn, $sql)) {
                 $product_id = $conn->insert_id; 
             
                 if (is_array($quantity)) {
                     foreach ($quantity as $key => $value) {
-                        $sql = "INSERT INTO quantity (qty, price, product_id) VALUES ('$value', '$price[$key]', '$product_id');";
+                        $sql = "INSERT INTO quantity (qty, price, product_id, product_link) VALUES ('$value', '$price[$key]', '$product_id', '$p_link[$key]');";
                         mysqli_query($conn, $sql);
                     }
                 } else {
@@ -75,14 +76,15 @@ if (isset($_POST['save'])){
 
 }
 
-if(isset($_GET['delete'])) {
-    $id = $_GET['delete'];
-    $sql = "DELETE FROM products WHERE product_id= '$id';";
+// if(isset($_GET['delete'])) {
+//     $id = $_GET['delete'];
+//     $sql = "DELETE FROM products WHERE product_id= '$id';";
 
-    if (mysqli_query($conn, $sql)) {
-        $msg = "Product has been deleted from database";
-        $msg_class = "alert-danger";
-    }
-}
+//     if (mysqli_query($conn, $sql)) {
+//         $msg = "Product has been deleted from database";
+//         $msg_class = "alert-danger";
+//         header("Location: http://localhost/ConnectRoot/add_products.php");
+//     }
+// }
 
 ?>
