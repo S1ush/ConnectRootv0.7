@@ -104,9 +104,8 @@ strong {
 .navbar.active {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  background-color: white;
+  color: #3a2d23;
   -webkit-box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -120,7 +119,7 @@ strong {
 .navbar.active .nav-link {
   -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  color: white;
+  color: black;
 }
 
 .navbar.active .nav-link:hover,
