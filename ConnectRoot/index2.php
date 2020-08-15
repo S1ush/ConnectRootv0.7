@@ -61,27 +61,35 @@
         <!-- navbar ends -->
        
     <section class="opening">
-              <div class="container-fluid"> 
-                  
-              
-        <div class="row  " style=" margin-bottom: -8rem;position: relative;">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active "  style="background-image: url(img/dark2.jpg) ; height: 90vh;">
+          <div class="row  " style=" margin-bottom: -8rem;position: relative;">
             <div class=" headline col-md-8 ">
-                <div class="mx-4 px-1 animate__animated animate__bounceInLeft  "> 
-                <h1 class="display-3 text-light embod p-2">Cold Pressed oils</h1>
-                <p class="lead justify-content  text-light p-2">
-                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aliquam in quo non, culpa earum, at quos quas doloribus iure velit ducimus, ex vero quibusdam.
+                <div class="  text-right animate__animated animate__bounceInLeft  "> 
+                <h1 class="display-3 pt-4 mt-4 text-light embod " style="font-size: 3.7em; color: whitesmoke !important ;">Cold / Wood Pressed oils</h1>
+                <p class="lead justify-content  text-light p-2 font-weight-normal">
+                  EAT LESS , EAT GOOD AND BE HEALTHY
                 </p>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-sm-3 mb-2">
-                       <a href="view_products.php"> <button class="btn btn-block btn-outline-info" type="button">View Products</button>
-                       </a>
+                <div class="row d-flex justify-content-end">
+                  <div class="row" style="position: relative; top: -2em;">
+                    <div class="col">
+                      <div class="blog-content" style="padding: 10px;">
+                        <a href="" class="box_btn" style="background-color: royalblue;">View product</a>
+                      </div>
                     </div>
-                    <div class="col-sm-3">
-
-                     <a href="aboutus.html">
-                        <button class="btn btn-block btn-outline-info" type="button">Learn About us </button>
-                     </a>  
+                    <div class="col">
+                      <div class="blog-content" style="padding: 10px;">
+                        <a href="" class="box_btn" style="background-color: rgb(145, 76, 235)">View product</a>
+                      </div>
                     </div>
+                  </div>
+                    
                 </div>
             </div>
             </div>
@@ -92,21 +100,173 @@
                 
             </div>
         </div>
+
+          
+          <div class="carousel-caption d-none d-md-block">
+           
+              
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(img/accredit.jpg);height: 90vh;">
+          <div class=" headline col-md-8 ">
+            <div class=" pt-2  text-center animate__animated animate__bounceInLeft  "> 
+            <h1 class="display-3 text-light embod " style="font-size: 3.5em; color: whitesmoke !important ;">FFSAI Approved</h1>
+            <p class="lead justify-content  text-light p-2 font-weight-light">
+              Quality and Safety assured
+            </p>
+            <div class="row d-flex justify-content-center">
+              <div class="row">
+                <div class="col">
+                  <div class="blog-content" style="padding: 10px; position: relative; top: -2.3em;">
+                    <a href="aboutus.html" class="box_btn" style="background-color: royalblue;">learn more</a>
+                  </div>
+                </div>
+                
+              </div>
+                
+            </div>
+        </div>
+        </div>
+
+          <div class="carousel-caption d-none d-md-block">
+           
+          </div>
+        </div>
+        <div class="carousel-item" style="background: url(img/whychoose.jpg) no-repeat; height: 90vh; background-size: auto ; back">
+          <div class=" headline col-md-6 ">
+            <div class="  text-center animate__animated animate__bounceInLeft  "> 
+            <h1 class="display-3 text-light embod " style="font-size: 3.5em; color: whitesmoke !important ;">Why Choose use ?</h1>
+            <p class="lead justify-content  text-light p-2 font-weight-bold" style="">
+                learn what makes us different?
+            </p>
+            <div class="row d-flex justify-content-center">
+              <div class="row">
+                <div class="col">
+                  <div class="blog-content" style="padding: 10px; position: relative; top: -2em; ">
+                    <a href="" class="box_btn" style="background-color: rgb(113, 65, 225);">click here</a>
+                  </div>
+                </div>
+                
+              </div>
+                
+            </div>
+        </div>
+        </div>
+          <div class="carousel-caption d-none d-md-block">
+           
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-        
-   <div style="z-index: 3;"> 
-    <svg class="waves "  xmlns="http://www.w3.org/2000/svg" style=" position:relative ;" viewBox="0 0 1440 320">
-        <path fill="white" fill-opacity="0." d="M0,320L60,293.3C120,267,240,213,360,186.7C480,160,600,160,720,154.7C840,149,960,139,1080,122.7C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-        </path>
-    </svg>
-</div>
+
+    
+
+            
+
     </section>
+    <!-- blog  spot -->
+
+    <section class="blog-me pt-100 pb-100" id="blog">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-6 mx-auto text-center">
+                     <div class="section-title mb-100">
+                        <p >Read with us?</p>
+                        <h4 class="display-4 font-weight-normal">latest blog</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                     <!-- Single Blog -->
+                     <div class="single-blog">
+                        <div class="blog-img">
+                           <div class="post-category">
+                              <p href="#" >Health</p>
+                           </div>
+                        </div>
+                        <div class="blog-content">
+                           <div class="blog-title">
+                              <h4><a href="#">Amazing health benefits</a></h4>
+                              <div class="meta">
+                                 <ul>
+                                    <li style="font-size: .85em;"> - 04 july 2020</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque.</p>
+                           <a href="#" class="box_btn">read more</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <!-- Single Blog -->
+                     <div class="single-blog">
+                        <div class="blog-img">
+                           
+                           <div class="post-category">
+                              <p href="#">Benefits</p>
+                           </div>
+                        </div>
+                        <div class="blog-content">
+                           <div class="blog-title">
+                              <h4><a href="#">Why Choose Cold pressed oil over regular refinded oil?</a></h4>
+                              <div class="meta">
+                                 <ul>
+                                    <li style="font-size: .85em;"> - 23 June 2020</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque.</p>
+                           <a href="#" class="box_btn">read more</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <!-- Single Blog -->
+                     <div class="single-blog">
+                        <div class="blog-img">
+                          
+                           <div class="post-category">
+                              <p href="#">Health</p>
+                           </div>
+                        </div>
+                        <div class="blog-content">
+                           <div class="blog-title">
+                              <h4><a href="#">What is Cold Pressed Oil?</a></h4>
+                              <div class="meta">
+                                 <ul>
+                                    <li style="font-size: .85em;"> - 31 July 2018</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque.</p>
+                           <a href="#" class="box_btn">read more</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         
+
 <section class="bg-light" style="position: relative; z-index: 10;">
     <div class="container p-4  " >
         <div class="row   ">
             <center>
                 <div class="container m-4 p-4">
-                    <h2 class="display-4"> What do we offer</h2>
+                <div class="section-title mb-100">
+                        <p >what makes us different?</p>
+                        <h4 class="display-4 font-weight-normal" >what do we offer</h4>
+                     </div>
                     
                 </div>
             <div class=" card-deck ">
@@ -283,10 +443,163 @@
 
 
 </section>
+<!-- testimonial -->
+
+
+<div class="container-fluid  p-4">
+                    <div class="text-center">
+
+                        <div class="section-title mb-100">
+                            <p >know what others are saying?</p>
+                            <h4 class="display-4 font-weight-normal">Testimonials</h4>
+                         </div> 
+                    </div>
+
+<div class="glide" id="review">
+  <div class="glide__track" style="height: auto;" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fas fa-quote-right quote"></i></div>
+          
+          
+          
+          <div class=" testimonial-footer">
+            <div class="image" style="z-index: 3;">
+              <img src="img/icons/male.png" style="z-index: 2;" width="100px" alt="" srcset="">
+             
+            </div>
+            <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
+              
+              <h3 class='lead font-weight-normal'  >Jane Doe</h3>
+            </div>
+            <div class="star text-center">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/emptystar.png" width="15px" alt="">
+            
+
+
+
+            </div>
+            
+            
+          </div>
+      </li>
+      <li class="glide__slide">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fas fa-quote-right quote"></i></div>
+          
+          
+          
+          <div class=" testimonial-footer">
+            <div class="image" style="z-index: 3;">
+              <img src="img/icons/male.png" style="z-index: 2;" width="100px" alt="" srcset="">
+             
+            </div>
+            <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
+              
+              <h3 class='lead font-weight-normal'  >Jane Doe</h3>
+            </div>
+            <div class="star text-center">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/half.png" s width="15px" alt="">
+            <img src="img/icons/emptystar.png" width="15px" alt="">
+            
+
+
+
+            </div>
+            
+            
+          </div>
+      </li>
+      <li class="glide__slide">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fas fa-quote-right quote"></i></div>
+          
+          
+          
+          <div class=" testimonial-footer">
+            <div class="image" style="z-index: 3;">
+              <img src="img/icons/male.png" style="z-index: 2;" width="100px" alt="" srcset="">
+             
+            </div>
+            <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
+              
+              <h3 class='lead font-weight-normal'  >Jane Doe</h3>
+            </div>
+
+            <div class="star text-center">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            
+
+
+
+            </div>
+            
+            
+          </div>
+      </li>
+    </ul>
+  </div>
+  <div class="glide__bullets" data-glide-el="controls[nav]">
+    <button class="glide__bullet" data-glide-dir="=0"></button>
+    <button class="glide__bullet" data-glide-dir="=1"></button>
+    <button class="glide__bullet" data-glide-dir="=2"></button>
+    <button class="glide__bullet" data-glide-dir="=3"></button>
+  </div>
+<div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+        <svg class="bi bi-arrow-left-short" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
+            <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+
+    </button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+
+        <svg class="bi bi-arrow-right-short" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"/>
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"/>
+          </svg>
+    </button>
+  </div>
+</div>
+
+
+
+  
+
+  
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
 
 
 <!-- contact form -->
 <div class="contact-form container-fluid">
+
+
     <div class="row">
         <div class="col-md-6 contact-seg-two">
             <img src="img//contact.png" alt="" class="contact-img">
@@ -402,6 +715,40 @@
                                     }
                                     )
                  glide.mount()
+
+                 var glide = new Glide('#review',{
+                                    type: 'carousel',
+                                    startAt: 0,
+                                    
+                                    
+                                    gap: 20,
+                                    animationDuration:700,
+                                    peek: {
+                                                before: 70,
+                                                after: 70
+                                            },
+                                    perView: 4,
+                                    breakpoint:{
+                                        1200:{
+                                            perView:4
+                                        },
+                                        800:{
+                                            perView:2
+                                        },
+                                        400:{
+                                          perView:1
+                                        }
+                                    }
+                                    
+                                    
+                                    }
+                                    )
+                 glide.mount()
+
+
+                        
+
+
         </script>    
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
