@@ -28,7 +28,7 @@
     </style>
    <!-- JavaScript -->
   
-    <title>Hello, world!</title>
+    <title>ConnectRoots</title>
   </head>
   <body>
     
@@ -446,7 +446,7 @@
 <!-- testimonial -->
 
 
-<div class="container-fluid  p-4">
+<div class="container-fluid m-4  p-4">
                     <div class="text-center">
 
                         <div class="section-title mb-100">
@@ -455,9 +455,9 @@
                          </div> 
                     </div>
 
-<div class="glide" id="review">
+<div class="glide " id="review">
   <div class="glide__track" style="height: auto;" data-glide-el="track">
-    <ul class="glide__slides">
+    <ul class="glide__slides p-4">
       <li class="glide__slide">
         <div class="testimonial-card">
           <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fas fa-quote-right quote"></i></div>
@@ -689,7 +689,7 @@
 
         <!-- glide.js -->
 
-        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js" integrity="sha256-CnNQJd80jPuIDyeQRRq7+Wgt+++Kl0dZLt4ETNmxMIw=" crossorigin="anonymous"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.0.0/dist/glide.min.js"  crossorigin="anonymous"></script> 
         <script>
             var glide = new Glide('.glide',{
                                     type: 'carousel',
@@ -702,12 +702,12 @@
                                                 after: 100
                                             },
                                     perView: 2,
-                                    breakpoint:{
+                                    breakpoints:{
                                         1200:{
-                                            perView:3
+                                            perView:2
                                         },
                                         800:{
-                                            perView:2
+                                            perView:1
                                         }
                                     }
                                     
@@ -716,7 +716,7 @@
                                     )
                  glide.mount()
 
-                 var glide = new Glide('#review',{
+                 var glide1 = new Glide('#review',{
                                     type: 'carousel',
                                     startAt: 0,
                                     
@@ -728,22 +728,23 @@
                                                 after: 70
                                             },
                                     perView: 4,
-                                    breakpoint:{
+                                    breakpoints:{
                                         1200:{
-                                            perView:4
+                                            perView:3
                                         },
                                         800:{
                                             perView:2
                                         },
-                                        400:{
+                                        600:{
                                           perView:1
                                         }
                                     }
                                     
                                     
+                                    
                                     }
                                     )
-                 glide.mount()
+                 glide1.mount()
 
 
                         
