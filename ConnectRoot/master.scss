@@ -710,6 +710,11 @@ background-color: blueviolet;
     max-width: 40em;
     background: linear-gradient(to right, #00b4db, #0083b0);
     border-radius: 20em;
+    margin: 10px;
+    .panel-text{
+      position: relative;
+      left: -5em;
+    }
     .img{ 
       border: 2px solid rgb(129, 245, 247);
       position: relative;
@@ -726,7 +731,7 @@ background-color: blueviolet;
       
 
     } 
-    .arrow{
+    .arrow-left{
       width: 5em;
       height: 5em;
       border-top-left-radius: 20em ;
@@ -734,6 +739,17 @@ background-color: blueviolet;
       
       position:relative;
       left: -5em;
+      top: 5em;
+      
+    }
+    .arrow-right{
+      width: 5em;
+      height: 5em;
+      border-top-right-radius: 20em ;
+      border-right: 2px solid palevioletred;
+      
+      position:relative;
+      right: -5em;
       top: 5em;
       
     }
