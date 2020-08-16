@@ -725,6 +725,7 @@ a.box_btn:hover::before {
   background: linear-gradient(to right, #00b4db, #0083b0);
   border-radius: 20em;
   margin: 10px;
+  left: 5px;
 }
 
 .panel .panel-text {
@@ -769,6 +770,23 @@ a.box_btn:hover::before {
 @media (max-width: 767.98px) {
   .panel {
     max-height: 10.25em;
+  }
+  .panel .img {
+    left: 0em;
+  }
+  .panel .arrow-left, .panel .arrow-right {
+    display: none;
+  }
+  .panel .panel-text {
+    top: -10em;
+    left: 10em;
+  }
+  .panel .panel-texts {
+    top: -10em;
+    left: 10em !important;
+  }
+  .panel .lead {
+    width: 20em;
   }
 }
 /*# sourceMappingURL=master.css.map */

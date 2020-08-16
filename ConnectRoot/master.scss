@@ -711,6 +711,7 @@ background-color: blueviolet;
     background: linear-gradient(to right, #00b4db, #0083b0);
     border-radius: 20em;
     margin: 10px;
+    left: 5px;
     .panel-text{
       position: relative;
       left: -5em;
@@ -755,6 +756,25 @@ background-color: blueviolet;
     }
     @media (max-width: 767.98px) { 
       max-height: 10.25em;
+      .img{
+        left: 0em;
+        
+      }
+      .arrow-left, .arrow-right{
+        display: none;
+      }
+      .panel-text{
+        top: -10em;
+        left: 10em;
+      }
+      .panel-texts{
+        top: -10em;
+        left: 10em !important;
+      }
+      .lead{
+        width: 20em;
+      }
+
      }
 
     
