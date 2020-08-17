@@ -712,6 +712,8 @@ background-color: blueviolet;
     border-radius: 20em;
     margin: 10px;
     left: 5px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2)  ;
+    transition: all .3s ease-in-out;
     .panel-text{
       position: relative;
       left: -5em;
@@ -720,14 +722,19 @@ background-color: blueviolet;
       border: 2px solid rgb(129, 245, 247);
       position: relative;
       left: -5em;
-      
-      
+      box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+      transition: all .3s ease-in-out;
       width: 10em;
       height: 10em;
       background-color: #00B4DB;
       border-radius: 20em;
       img{
+        margin: .9em;
         padding: 1em;
+        background-color: white;
+        border-radius: 20em;
+        height: 8em;
+        transition: all .3s ease-in-out;
       }
       
 
@@ -759,6 +766,7 @@ background-color: blueviolet;
       .img{
         left: 0em;
         
+        
       }
       .arrow-left, .arrow-right{
         display: none;
@@ -779,6 +787,20 @@ background-color: blueviolet;
 
     
 }
+
+.panel:hover{
+  box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.25) ;
+  .img{
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
+    img{
+      transform: scale(1.02);
+    }
+  }
+  
+}
+
+
+
 
 
 

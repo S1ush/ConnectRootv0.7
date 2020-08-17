@@ -726,6 +726,10 @@ a.box_btn:hover::before {
   border-radius: 20em;
   margin: 10px;
   left: 5px;
+  -webkit-box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .panel .panel-text {
@@ -737,6 +741,10 @@ a.box_btn:hover::before {
   border: 2px solid #81f5f7;
   position: relative;
   left: -5em;
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
   width: 10em;
   height: 10em;
   background-color: #00B4DB;
@@ -744,7 +752,13 @@ a.box_btn:hover::before {
 }
 
 .panel .img img {
+  margin: .9em;
   padding: 1em;
+  background-color: white;
+  border-radius: 20em;
+  height: 8em;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .panel .arrow-left {
@@ -788,5 +802,20 @@ a.box_btn:hover::before {
   .panel .lead {
     width: 20em;
   }
+}
+
+.panel:hover {
+  -webkit-box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.panel:hover .img {
+  -webkit-box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.panel:hover .img img {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 /*# sourceMappingURL=master.css.map */
