@@ -1,3 +1,5 @@
+// navbar
+
 $(function onscroll() {
     $(window).on('scroll', function () {
         if ( $(window).scrollTop() > 5 ) {
@@ -14,7 +16,7 @@ $(function onscroll() {
 
 
 var	testim = document.getElementById("testim"),
-		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+	testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
     testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
     testimLeftArrow = document.getElementById("left-arrow"),
     testimRightArrow = document.getElementById("right-arrow"),
@@ -24,9 +26,8 @@ var	testim = document.getElementById("testim"),
     testimTimer,
 		touchStartPos,
 		touchEndPos,
-		touchPosDiff,
+		touchPosDiff, 
 		ignoreTouch = 30;
-;
 
 window.onload = function() {
 
@@ -119,5 +120,5 @@ window.onload = function() {
 				}
 			
 		})
-}
+};
 

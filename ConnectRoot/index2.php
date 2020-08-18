@@ -602,7 +602,7 @@
 
     <div class="row">
         <div class="col-md-6 contact-seg-two">
-            <img src="img//contact.png" alt="" class="contact-img">
+            <img src="img//contact-us.png" alt="" class="contact-img mt-n1">
         </div>
         <div class="center col-md-6 contact-seg-one">
             <h1 class="display-4">Contact Form</h1>

@@ -349,7 +349,7 @@ strong {
 
 .contact-form {
   margin-top: 30px;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
   background-color: #fff;
 }
 
@@ -357,11 +357,14 @@ strong {
   padding: 30px;
 }
 
+.mt-n1 {
+  margin-top: -0.15rem !important;
+}
+
 .contact-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
   width: 100%;
 }
 
@@ -817,5 +820,17 @@ a.box_btn:hover::before {
 .panel:hover .img img {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.fade-in-left {
+  opacity: 0;
+  margin-left: -300px;
+  max-width: 100%;
+}
+
+.fade-in-right {
+  opacity: 0;
+  margin-right: -300px;
+  max-width: 100%;
 }
 /*# sourceMappingURL=master.css.map */

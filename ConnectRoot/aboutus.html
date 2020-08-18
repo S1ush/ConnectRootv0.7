@@ -5,10 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="Description" content="Enter your description here"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>   
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="Observable.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
         <link rel="stylesheet" href="master.css">
-        <title>Title</title>
+        <title>About Us</title>
+
+        
+
+
+
         <style>
             .timeline {
                 text-shadow: 1px 2px 4px rgba(0,0,0,0.2);
@@ -147,31 +157,33 @@
 
 
      
-        <header class="header">
-          <nav class="navbar-scroll navbar navbar-expand-lg fixed-top ">
-            <div class="container-fluid ">
-                <div class="ml-4 pl-2">
-    
-                    <a href="index2.html" class="navbar-brand  text-uppercase" >
-                        <img src="img/Brand_Logo.png" alt="" class="logo">
-                      
-                    </a>
-                </div>
-                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
-                
-                <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a href="#" class="nav-link  ">Home <span class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a href="aboutus.html" class="nav-link  ">About us</a></li>
-                        <li class="nav-item"><a href="view_products.php" class="nav-link  ">Products</a></li>
-                        <li class="nav-item"><a href="#Products-services" class="nav-link  ">Gallery</a></li>
-                        <li class="nav-item"><a href="#Testimonials" class="nav-link  ">Testimonials</a></li>
-                        <li class="nav-item"><a href="supportus.html" class="nav-link  ">Contact us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        </header>
+        <!-- navbar start -->
+    <header class="header">
+      <nav class="navbar-scroll navbar navbar-expand-lg fixed-top scroll">
+          <div class="container-fluid ">
+              <div class="ml-4 pl-2">
+  
+                  <a href="index2.html" class="navbar-brand  text-uppercase" >
+                      <img src="img/Brand_Logo.png" alt="" class="logo">
+                    
+                  </a>
+              </div>
+              <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+              
+              <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active"><a href="#" class="nav-link  ">Home <span class="sr-only">(current)</span></a></li>
+                      <li class="nav-item"><a href="aboutus.html" class="nav-link  ">About us</a></li>
+                      <li class="nav-item"><a href="view_products.php" class="nav-link  ">Products</a></li>
+                      <li class="nav-item"><a href="#Products-services" class="nav-link  ">Gallery</a></li>
+                      <li class="nav-item"><a href="#Testimonials" class="nav-link  ">Testimonials</a></li>
+                      <li class="nav-item"><a href="supportus.html" class="nav-link  ">Contact us</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+          </header>
+          <!-- navbar ends -->
         <section class="aboutus">       
         <div class="container banner-text text-light" >
             <div class="text-center p-4 ">
@@ -196,7 +208,7 @@
         
     <!-- mission -->
     <section class="bg-light" style="position: relative; z-index: 10; ">
-      <div class="contact-form container-fluid">
+      <div class="container-fluid fade-in-left">
         <div class="row">
               <div class="center col-md-6 mission-seg-one">
                 <h1 class="display-4 pb-3">Mission</h1>
@@ -211,9 +223,9 @@
     <!-- mission ends -->
     <!-- vision -->
     <section>
-      <div class="contact-form container-fluid">
+      <div class=" container-fluid fade-in-right">
         <div class="row">
-            <div class="col-md-6 contact-seg-two">
+            <div class="col-md-6 contact-seg-two ">
                 <img src="img//about-us//vision.png" alt="" class="mission-img">
             </div>
             <div class="center col-md-6 mission-seg-one">
@@ -224,6 +236,67 @@
     </div>
     </section>
     <!-- vision ends -->
+    <!-- standards section -->
+    <section>
+      <div class=" container-fluid fade-in-left">
+        <div class="row">
+          <div class="center col-md-6 mission-seg-one">
+            <h1 class="display-4 pb-3">Standards</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-md-6 contact-seg-two">
+                <img src="img//about-us//standards.png" alt="" class="mission-img">
+          </div>            
+        </div>
+    </div>
+    </section>
+    <!-- Standard ends -->
+    <!-- Sourcing section -->
+    <section>
+      <div class="container-fluid fade-in-right">
+        <div class="row">
+            <div class="col-md-6 contact-seg-two">
+                <img src="img//about-us//sourcing.png" alt="" class="mission-img">
+            </div>
+            <div class="center col-md-6 mission-seg-one">
+              <h1 class="display-4 pb-3">Sourcing the Right Ingredients</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Sourcing ends -->
+    <!-- Refund and Returns -->
+    <section>
+      <div class="container-fluid fade-in-left">
+        <div class="row">
+            <div class="center col-md-6 mission-seg-one">
+              <h1 class="display-4 pb-3">Refund and Returns</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-6 contact-seg-two">
+                <img src="img//about-us//refund.png" alt="" class="mission-img">
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Refunds and Return ends -->
+    <!-- Privacy Policy -->
+    <section>
+      <div class="container-fluid fade-in-right">
+        <div class="row">
+            <div class="col-md-6 contact-seg-two">
+                <img src="img//about-us//privacy-policy.png" alt="" class="mission-img">
+            </div>
+            <div class="center col-md-6 mission-seg-one">
+              <h1 class="display-4 pb-3">Privacy Policy</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Privacy Policy ends -->
+    <!-- timeline section -->
     <section class="timeline-section">
         <div class="container pt-4 mt-4">
             <div class="text-center">
@@ -262,8 +335,8 @@
         </div>
         
     </section>
-
-
+<!-- timeline ends -->
+<!-- footer -->
     <footer>
       <section>
       <div class="sect-one footer-top">
@@ -314,11 +387,5 @@
 
 
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-    <script type="text/javascript" src="script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </body>
 </html>
