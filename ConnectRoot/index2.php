@@ -80,7 +80,7 @@
                   <div class="row" style="position: relative; top: -2em;">
                     <div class="col">
                       <div class="blog-content" style="padding: 10px;">
-                        <a href="" class="box_btn" style="background-color: royalblue;">View product</a>
+                        <a href="view_products.php" class="box_btn" style="background-color: royalblue;">View product</a>
                       </div>
                     </div>
                     <div class="col">
