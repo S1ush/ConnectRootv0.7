@@ -326,16 +326,127 @@
 </div>
 
 <section>
-    <div class="container text-center m-4 p-4" style="height: 80vh;">
-        <h1 class="display-4">Our Story</h1>
+    <div class="container pt-4 mt-2 " style="height:155vh;">
+          <div class="text-center">
+
+          <div class="section-title mb-100">
+              <p >How are we doing it right?</p>
+          <h4 class="display-4 font-weight-normal">Our Technology</h4>
+        </div> 
+        </div>
+          <!-- panel 1 -->
+          <div class="panel row float-right ">
+               <div class="arrow-left"> </div>
+               <div class=" col-md-3 " style="padding: 0px;">
+                 <div class="img ">
+                   <img src="img/icons/male.png" alt="">
+                 </div>
+                </div>
+
+                <div class=" col-md-7 panel-text  ">
+                   <div class="  p-2  ">
+                        <h4 class="display 5 text-light"> Research</h4>
+                   </div>
+                     <div class="p-1 text-justify">
+                      <p class="lead text-light" style="font-size: .9em;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim illum laborum nam amet a excepturi quo cupiditate suscipit incidunt ad.</p>
+                    </div>
+               </div>
+              </div>
+                    <!-- .panel 2  -->
+              <div class="panel row float-left " style=" background: linear-gradient(to right, #6a3093, #a044ff);border-color: rgb(230, 122, 230);">
+                
+                <div class=" col-md-3 " style="padding: 0px;">
+                  <div class="img " style="position: relative; left: 0px; border-color: rgb(230, 122, 230); background-color:#6a3093 ; ">
+                    <img src="img/icons/male.png" alt="">
+                  </div>
+                 </div>
+ 
+                 <div class=" col-md-7 panel-texts set " style="position: relative; left: 0px;">
+                    <div class="  p-2  ">
+                         <h4 class="display 5 text-light"> Research</h4>
+                    </div>
+                      <div class="p-1 text-justify">
+                       <p class="lead text-light" style="font-size: .9em;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim illum laborum nam amet a excepturi quo cupiditate suscipit incidunt ad.</p>
+                     </div>
+                </div>
+                <div class="arrow-right"> </div>
+               </div>
+                        <!-- panel 3 -->
+               <div class="panel row float-right " style="background: linear-gradient(to right, #ff416c, #ff4b2b); border-color: rgb(224, 152, 130);">
+                <div class="arrow-left"> </div>
+                <div class=" col-md-3 " style="padding: 0px;">
+                  <div class="img " style="border-color: rgb(224, 152, 130); background-color:#ff416c ;">
+                    <img src="img/icons/male.png" alt="">
+                  </div>
+                 </div>
+ 
+                 <div class=" col-md-7 panel-text  ">
+                    <div class="  p-2  ">
+                         <h4 class="display 5 text-light"> Research</h4>
+                    </div>
+                      <div class="p-1 text-justify">
+                       <p class="lead text-light" style="font-size: .9em;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim illum laborum nam amet a excepturi quo cupiditate suscipit incidunt ad.</p>
+                     </div>
+                </div>
+               </div>
+               <!-- panel 4 -->
+
+               <div class="panel row float-left " style=" background: linear-gradient(to right, #56ab2f, #a8e063);;border-color: rgb(122, 230, 176);">
+                
+                <div class=" col-md-3 " style="padding: 0px;">
+                  <div class="img " style="position: relative; left: 0px; border-color: rgb(122, 230, 176);; background-color:#56ab2f ">
+                    <img src="img/icons/male.png" alt="">
+                  </div>
+                 </div>
+ 
+                 <div class=" col-md-7 panel-texts " style="position: relative; left: 0px;">
+                    <div class="  p-2  ">
+                         <h4 class="display 5 text-light"> Research</h4>
+                    </div>
+                      <div class="p-1 text-justify">
+                       <p class="lead text-light" style="font-size: .9em;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim illum laborum nam amet a excepturi quo cupiditate suscipit incidunt ad.</p>
+                     </div>
+                </div>
+                <div class="arrow-right"> </div>
+               </div>
+               <!-- panel 5 -->
+               <div class="panel row float-right ">
+                <div class="arrow-left"> </div>
+                <div class=" col-md-3 " style="padding: 0px;">
+                  <div class="img ">
+                    <img src="img/icons/male.png" alt="">
+                  </div>
+                 </div>
+ 
+                 <div class=" col-md-7 panel-text  ">
+                    <div class="  p-2  ">
+                         <h4 class="display 5 text-light"> Research</h4>
+                    </div>
+                      <div class="p-1 text-justify">
+                       <p class="lead text-light" style="font-size: .9em;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim illum laborum nam amet a excepturi quo cupiditate suscipit incidunt ad.</p>
+                     </div>
+                </div>
+               </div>
+
+      
+
+      
+      
+
+      
+
+
+    
+
+
     </div>
 </section>
 
 
 <section class="features">
-    <div class="jumbotron">
-       <div class="row pb-4 mb-4 text-center align-items-center" >
-           <div class="col-md-4 pr-4 border-right">
+    <div class="container-fluid p-4 bg-secondary">
+       <div class="row pb-4 mb-4 p-4 text-center align-items-center" >
+           <div class="col-md-4 pr-4 ">
                <div class="row imgs  " s>
                     <img src="img/icons/nutrition.png" alt="">
                </div>
@@ -349,7 +460,7 @@
                </div>
                
            </div>
-           <div class="col-md-4 border-right">
+           <div class="col-md-4 ">
                <div class="row imgs">
                    <img src="img/icons/oil.png" alt="">
                </div>
@@ -367,7 +478,7 @@
                </div>
 
            </div>
-           <div class="col-md-4 border-right">
+           <div class="col-md-4 ">
                <div class="row imgs ">
                    <div class=" ">
                        
