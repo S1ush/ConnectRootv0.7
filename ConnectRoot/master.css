@@ -463,8 +463,12 @@ strong {
 
 .mission-seg-one {
   margin: auto;
-  width: 50%;
+  width: 80%;
   padding: 30px;
+}
+
+.bg-secondary {
+  background-color: #f7f7ff !important;
 }
 
 /* blog spot */
