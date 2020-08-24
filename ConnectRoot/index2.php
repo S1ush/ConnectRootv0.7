@@ -261,55 +261,16 @@
 <section class="bg-light" style="position: relative; z-index: 10;">
     <div class="container p-4  " >
         <div class="row   ">
-            <center>
+            
                 <div class="container m-4 p-4">
-                <div class="section-title mb-100">
+                <div class="section-title text-center mb-100">
                         <p >what makes us different?</p>
                         <h4 class="display-4 font-weight-normal" >what do we offer</h4>
                      </div>
                     
                 </div>
-            <div class=" card-deck ">
-            <div class="card col-10    " >
-                <img style="width: 10em;" src="img/sunflowerseed.png"  class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title text-left">Feature</h5>
-                <p class="card-text text-left text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, placeat.</p>
-                </div>
-                
-                <div class="card-body">
-                    <p class="textweight-light text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus corporis ut earum sint voluptas quia suscipit soluta iure dolorem, deleniti asperiores, illum velit porro provident?<p>
-               
-                </div>
-            </div>
-        
-            <div class="card col-10 " style="width: 18p;">
-                <img style="width: 10em;" src="img/sunflowerseed.png"  class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title text-left">Feature</h5>
-                <p class="card-text text-left text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, placeat.</p>
-                </div>
-                
-                <div class="card-body">
-                    <p class="textweight-light text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus corporis ut earum sint voluptas quia suscipit soluta iure dolorem, deleniti asperiores, illum velit porro provident?<p>
-               
-                </div>
-            </div>
-            <div class="card col-10" >
-                <img style="width: 10em;" src="img/sunflowerseed.png"  class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title text-left">Feature</h5>
-                <p class="card-text text-left text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, placeat.</p>
-                </div>
-                
-                <div class="card-body">
-                    <p class="textweight-light text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus corporis ut earum sint voluptas quia suscipit soluta iure dolorem, deleniti asperiores, illum velit porro provident?<p>
-               
-                </div>
-            </div>
-            
-        </div>
-    </center>
+          
+    
             
         </div>
         
@@ -557,7 +518,7 @@
 <!-- testimonial -->
 
 
-<div class="container-fluid m-4  p-4">
+<div class="container-fluid p-4 pt-4  ">
                     <div class="text-center">
 
                         <div class="section-title mb-100">
@@ -568,7 +529,7 @@
 
 <div class="glide " id="review">
   <div class="glide__track" style="height: auto;" data-glide-el="track">
-    <ul class="glide__slides p-4">
+    <ul class="glide__slides ">
       <li class="glide__slide">
         <div class="testimonial-card">
           <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fas fa-quote-right quote"></i></div>
