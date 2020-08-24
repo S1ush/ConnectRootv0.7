@@ -677,7 +677,7 @@ a.box_btn:hover::before {
   padding: 2.2em;
   line-height: 1.7em;
   position: relative;
-  font-size: 1em;
+  font-size: .9em;
 }
 
 .image {

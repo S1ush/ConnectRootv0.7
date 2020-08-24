@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="script/glide.core.css">
     <link rel="stylesheet" href="script/glide.theme.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="master.css">
+    <!-- <link rel="stylesheet" href="master.css"> -->
+    <link href="master.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link
@@ -532,25 +533,59 @@
     <ul class="glide__slides ">
       <li class="glide__slide">
         <div class="testimonial-card">
-          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fas fa-quote-right quote"></i></div>
+          <div class="text">Every product of ConnectRoots is pure and good for everyone. Right now I am using 3 to 4 products of ConnectRoots. 
+             <i class="fas fa-quote-right quote">
+             </i>
+            </div>
           
           
           
           <div class=" testimonial-footer">
             <div class="image" style="z-index: 3;">
-              <img src="img/icons/male.png" style="z-index: 2;" width="100px" alt="" srcset="">
+              <img src="https://lh5.googleusercontent.com/-m3KzsfTiW94/AAAAAAAAAAI/AAAAAAAAAAA/r0OiTLELXtA/w75-h75-p-rp-mo-br100/photo.jpg" style="z-index: 2;" width="100px" alt="" srcset="">
              
             </div>
             <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
               
-              <h3 class='lead font-weight-normal'  >Jane Doe</h3>
+              <h3 class='lead font-weight-normal'  >Sumit Shinde</h3>
             </div>
             <div class="star text-center">
             <img src="img/icons/star.png" width="15px" alt="">
             <img src="img/icons/star.png" width="15px" alt="">
             <img src="img/icons/star.png" width="15px" alt="">
             <img src="img/icons/star.png" width="15px" alt="">
-            <img src="img/icons/emptystar.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+
+
+
+            </div>
+            
+            
+          </div>
+      </li>
+      <li class="glide__slide">
+        <div class="testimonial-card">
+          <div class="text">Hi, I am happy to rate 5 star because had purchased the product from ConnectRoots  in Mumbai and it was superb and 100% organic.# 100%Organic
+# 100%Authenticate
+             <i class="fas fa-quote-right quote"></i></div>
+          
+          
+          
+          <div class=" testimonial-footer">
+            <div class="image" style="z-index: 3;">
+              <img src="https://lh5.googleusercontent.com/-VU0d7IM6xdU/AAAAAAAAAAI/AAAAAAAAAAA/B81uyiaDUfk/w75-h75-p-rp-mo-br100/photo.jpg" style="z-index: 2;" width="100px" alt="" srcset="">
+             
+            </div>
+            <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
+              
+              <h3 class='lead font-weight-normal'  > Arjunwadkar Narayan</h3>
+            </div>
+            <div class="star text-center">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" s width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
             
 
 
@@ -562,25 +597,27 @@
       </li>
       <li class="glide__slide">
         <div class="testimonial-card">
-          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fas fa-quote-right quote"></i></div>
+          <div class="text">This is best alternative to refined oil both in terms of taste and health. This has helped me reduce weight within less than a month.
+             <i class="fas fa-quote-right quote"></i></div>
           
           
           
           <div class=" testimonial-footer">
             <div class="image" style="z-index: 3;">
-              <img src="img/icons/male.png" style="z-index: 2;" width="100px" alt="" srcset="">
+              <img src="https://lh5.googleusercontent.com/-x8S0OBNmTvg/AAAAAAAAAAI/AAAAAAAAAAA/xz2439kb2AU/w75-h75-p-rp-mo-br100/photo.jpg" style="z-index: 2;" width="100px" alt="" srcset="">
              
             </div>
             <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
               
-              <h3 class='lead font-weight-normal'  >Jane Doe</h3>
+              <h3 class='lead font-weight-normal'  >Gaurav Nemade</h3>
             </div>
+
             <div class="star text-center">
             <img src="img/icons/star.png" width="15px" alt="">
             <img src="img/icons/star.png" width="15px" alt="">
             <img src="img/icons/star.png" width="15px" alt="">
-            <img src="img/icons/half.png" s width="15px" alt="">
-            <img src="img/icons/emptystar.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
             
 
 
@@ -592,18 +629,83 @@
       </li>
       <li class="glide__slide">
         <div class="testimonial-card">
-          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fas fa-quote-right quote"></i></div>
+          <div class="text"> I must say I have found a healthy and safe way to take care of my loved ones. Products are value for money. Completely organic. Service is good. Highly recommended.
+             <i class="fas fa-quote-right quote"></i></div>
           
           
           
           <div class=" testimonial-footer">
             <div class="image" style="z-index: 3;">
-              <img src="img/icons/male.png" style="z-index: 2;" width="100px" alt="" srcset="">
+              <img src="https://lh5.googleusercontent.com/-Z4aVdukTzdM/AAAAAAAAAAI/AAAAAAAAAAA/VFm5FDh41Os/w75-h75-p-rp-mo-br100/photo.jpg" style="z-index: 2;" width="100px" alt="" srcset="">
              
             </div>
             <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
               
-              <h3 class='lead font-weight-normal'  >Jane Doe</h3>
+              <h3 class='lead font-weight-normal'  >Piyush Marathe</h3>
+            </div>
+
+            <div class="star text-center">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            
+
+
+
+            </div>
+            
+            
+          </div>
+      </li>
+      <li class="glide__slide">
+        <div class="testimonial-card">
+          <div class="text text-justify">Great shop and great service bought groundnut cold pressed oil from here and its quality is great totally pure amd fresh, not like other brands 
+             <i class="fas fa-quote-right quote"></i></div>
+          
+          
+          
+          <div class=" testimonial-footer">
+            <div class="image" style="z-index: 3;">
+              <img src="https://lh3.googleusercontent.com/-nKjtSjz-utA/AAAAAAAAAAI/AAAAAAAAAAA/kxs51lrpICo/w75-h75-p-rp-mo-br100/photo.jpg" style="z-index: 2;" width="100px" alt="" srcset="">
+             
+            </div>
+            <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
+              
+              <h3 class='lead font-weight-normal'  >Nihar More</h3>
+            </div>
+
+            <div class="star text-center">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            
+
+
+
+            </div>
+            
+            
+          </div>
+      </li>
+      <li class="glide__slide">
+        <div class="testimonial-card">
+          <div class="text">Great measures taken into quality control and safety of the product with a friendly environment to help make a purchse decision according to your needs and requirements. 👍👍👍
+             <i class="fas fa-quote-right quote"></i></div>
+          
+          
+          
+          <div class=" testimonial-footer">
+            <div class="image" style="z-index: 3;">
+              <img src="https://lh6.googleusercontent.com/-JFUl_5wjbEY/AAAAAAAAAAI/AAAAAAAAAAA/2vFv1TbqeOo/w75-h75-p-rp-mo-br100/photo.jpg" style="z-index: 2;" width="100px" alt="" srcset="">
+             
+            </div>
+            <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
+              
+              <h3 class='lead font-weight-normal'  >Aaditya Wakade</h3>
             </div>
 
             <div class="star text-center">
