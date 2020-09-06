@@ -268,15 +268,33 @@
                         <p >what makes us different?</p>
                         <h4 class="display-4 font-weight-normal" >what do we offer</h4>
                      </div>
-                    
-                </div>
-          
-    
-            
+                </div>        
         </div>
-        
     </div>
 </section>
+
+<!-- top 4 oil products -->
+      <div class="container-fluid bg-info p-4">
+        <div class="glide" id="review">
+          <div class="glide__track" style="height: auto;" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="testimonial-card">
+                  <div class="text"></div> 
+                  <div class=" testimonial-footer">
+                    <div class="image" style="z-index: 3;">
+                      <img src="img/icons/male.png" style="z-index: 2;" width="100px" alt="" srcset="">
+                    </div>
+                    <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">  
+                      <h3 class='lead font-weight-normal'  >Jane Doe</h3>
+                    </div> 
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<!-- top 4 oil products ends -->
 
 <div class="container-fluid  parallax text-light p-4" >
     <div class="shadow-lg container-fluid m-4" style="background-color: rgba(0,0,0,0.2); backdrop-filter: blur(5px);" >
