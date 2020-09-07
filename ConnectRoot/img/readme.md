@@ -1,6 +1,7 @@
 Connect root
 1. install xampp
 2. run apache and phpmyadmin
+3. Create new db connect_roots and import file connect_roots.sql
 3. goto localhost/index.php
 
 
