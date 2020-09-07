@@ -273,28 +273,132 @@
     </div>
 </section>
 
+
 <!-- top 4 oil products -->
+<section class="bg-light" style="position: relative; z-index: 10;">
+    <div class="container p-4  " >
+        <div class="row   ">
+            
+                <div class="container m-4 p-4">
+                <div class="section-title text-center mb-100">
+                        <h4 class="display-4 font-weight-normal" >Top Oil Products</h4>
+                     </div>
+                </div>        
+        </div>
+    </div>
+</section>
       <div class="container-fluid bg-info p-4">
         <div class="glide" id="review">
           <div class="glide__track" style="height: auto;" data-glide-el="track">
-            <ul class="glide__slides">
+          <ul class="glide__slides">
+          <?php
+              $mysqli = new mysqli('localhost', 'root', '', 'connect_roots');
+              $result = $mysqli->query("SELECT product_id, product_name, product_img, product_desc FROM products WHERE oil_top_products=1;");
+              while($row = $result->fetch_assoc()):
+          ?>
               <li class="glide__slide">
                 <div class="testimonial-card">
-                  <div class="text"></div> 
-                  <div class=" testimonial-footer">
-                    <div class="image" style="z-index: 3;">
-                      <img src="img/icons/male.png" style="z-index: 2;" width="100px" alt="" srcset="">
+                    <div class="card text-center" style="width: 300px;">
+                      <img src="<?php echo 'img/product-images/'.$row['product_img'] ?>" class="card-img-top">
+                      <div class="card-body">
+                          <h5 class="card-title"><?php echo $row['product_name'];?></h5>
+                          <p class="card-text text-truncate"><?php echo $row['product_desc'];?></p>
+                          <a href="product-profile.php?view=<?php echo $row['product_id']?>"><button class="btn btn-block btn-outline-info" type="button" onclick="">View Product</button></a>
+                      </div>
                     </div>
-                    <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">  
-                      <h3 class='lead font-weight-normal'  >Jane Doe</h3>
-                    </div> 
-                  </div>
+                </div>
               </li>
+              <?php endwhile; ?>
             </ul>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+          </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                <svg class="bi bi-arrow-left-short" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
+                    <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+
+                <svg class="bi bi-arrow-right-short" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"/>
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"/>
+                  </svg>
+            </button>
           </div>
         </div>
       </div>
 <!-- top 4 oil products ends -->
+
+<!-- top 4 organic products starts -->
+<section class="bg-light" style="position: relative; z-index: 10;">
+    <div class="container p-4  " >
+        <div class="row   ">
+            
+                <div class="container m-4 p-4">
+                <div class="section-title text-center mb-100">
+                        <h4 class="display-4 font-weight-normal" >Top Organic Products</h4>
+                     </div>
+                </div>        
+        </div>
+    </div>
+</section>
+<div class="container-fluid bg-info p-4">
+        <div class="glide" id="review">
+          <div class="glide__track" style="height: auto;" data-glide-el="track">
+          <ul class="glide__slides">
+          <?php
+              $mysqli = new mysqli('localhost', 'root', '', 'connect_roots');
+              $result = $mysqli->query("SELECT product_id, product_name, product_img, product_desc FROM products WHERE organic_top_products=1;");
+              while($row = $result->fetch_assoc()):
+          ?>
+              <li class="glide__slide">
+                <div class="testimonial-card">
+                    <div class="card text-center" style="width: 300px;">
+                      <img src="<?php echo 'img/product-images/'.$row['product_img'] ?>" class="card-img-top">
+                      <div class="card-body">
+                          <h5 class="card-title"><?php echo $row['product_name'];?></h5>
+                          <p class="card-text text-truncate"><?php echo $row['product_desc'];?></p>
+                          <a href="product-profile.php?view=<?php echo $row['product_id']?>"><button class="btn btn-block btn-outline-info" type="button" onclick="">View Product</button></a>
+                      </div>
+                    </div>
+                </div>
+              </li>
+              <?php endwhile; ?>
+            </ul>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+          </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                <svg class="bi bi-arrow-left-short" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
+                    <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+
+                <svg class="bi bi-arrow-right-short" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"/>
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"/>
+                  </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+<!-- top 4 organic products ends -->
 
 <div class="container-fluid  parallax text-light p-4" >
     <div class="shadow-lg container-fluid m-4" style="background-color: rgba(0,0,0,0.2); backdrop-filter: blur(5px);" >
