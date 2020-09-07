@@ -48,8 +48,9 @@ a:hover {
 }
 
 .card:hover .card-img-top {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+  border-radius: .7em;
 }
 
 body {

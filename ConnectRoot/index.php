@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="script/glide.core.css">
     <link rel="stylesheet" href="script/glide.theme.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="master.css">
+    <!-- <link rel="stylesheet" href="master.css"> -->
+    <link href="master.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link
@@ -50,8 +51,8 @@
                     <li class="nav-item active"><a href="#" class="nav-link  ">Home <span class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a href="aboutus.html" class="nav-link  ">About us</a></li>
                     <li class="nav-item"><a href="view_products.php" class="nav-link  ">Products</a></li>
-                    <li class="nav-item"><a href="index.php/#Products-services" class="nav-link  ">Gallery</a></li>
-                    <li class="nav-item"><a href="index.php/#Testimonials" class="nav-link  ">Testimonials</a></li>
+                    <li class="nav-item"><a href="#Products-services" class="nav-link  ">Gallery</a></li>
+                    <li class="nav-item"><a href="index2.php#Testimonials" class="nav-link  ">Testimonials</a></li>
                     <li class="nav-item"><a href="supportus.html" class="nav-link  ">Contact us</a></li>
                 </ul>
             </div>
@@ -136,7 +137,7 @@
           <div class=" headline col-md-6 ">
             <div class="  text-center animate__animated animate__bounceInLeft  "> 
             <h1 class="display-3 text-light embod " style="font-size: 3.5em; color: whitesmoke !important ;">Why Choose use ?</h1>
-            <p class="lead justify-content  text-light p-2 font-weight-bold" >
+            <p class="lead justify-content  text-light p-2 font-weight-bold" style="">
                 learn what makes us different?
             </p>
             <div class="row d-flex justify-content-center">
@@ -258,63 +259,136 @@
          </section>
          
 
+
+<!-- top 4 oil products -->
 <section class="bg-light" style="position: relative; z-index: 10;">
     <div class="container p-4  " >
         <div class="row   ">
-            <center>
-                <div class="container m-4 p-4">
-                <div class="section-title mb-100">
-                        <p >what makes us different?</p>
-                        <h4 class="display-4 font-weight-normal" >what do we offer</h4>
+            
+                <div class="container ">
+                <div class="section-title text-center mb-100">
+                         <p>Our top quality  oil products </p>
+                        <h4 class="display-4 font-weight-normal" >Top Oil Products</h4>
                      </div>
-                    
-                </div>
-            <div class=" card-deck ">
-            <div class="card col-10    " >
-                <img style="width: 10em;" src="img/sunflowerseed.png"  class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title text-left">Feature</h5>
-                <p class="card-text text-left text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, placeat.</p>
-                </div>
-                
-                <div class="card-body">
-                    <p class="textweight-light text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus corporis ut earum sint voluptas quia suscipit soluta iure dolorem, deleniti asperiores, illum velit porro provident?<p>
-               
-                </div>
-            </div>
-        
-            <div class="card col-10 " style="width: 18p;">
-                <img style="width: 10em;" src="img/sunflowerseed.png"  class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title text-left">Feature</h5>
-                <p class="card-text text-left text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, placeat.</p>
-                </div>
-                
-                <div class="card-body">
-                    <p class="textweight-light text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus corporis ut earum sint voluptas quia suscipit soluta iure dolorem, deleniti asperiores, illum velit porro provident?<p>
-               
-                </div>
-            </div>
-            <div class="card col-10" >
-                <img style="width: 10em;" src="img/sunflowerseed.png"  class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title text-left">Feature</h5>
-                <p class="card-text text-left text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, placeat.</p>
-                </div>
-                
-                <div class="card-body">
-                    <p class="textweight-light text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus corporis ut earum sint voluptas quia suscipit soluta iure dolorem, deleniti asperiores, illum velit porro provident?<p>
-               
-                </div>
-            </div>
-            
+                </div>        
         </div>
-    </center>
-            
+    </div>
+
+      <div class="container-fluid bg-info p-4">
+        <div class="glide" id="top-oil">
+          <div class="glide__track " style="height: auto;" data-glide-el="track">
+          <ul class="glide__slides  " style="padding: 3em 0em 5em;" >
+          <?php
+              $mysqli = new mysqli('localhost', 'root', '', 'connect_roots');
+              $result = $mysqli->query("SELECT product_id, product_name, product_img, product_desc FROM products WHERE oil_top_products=1;");
+              while($row = $result->fetch_assoc()):
+          ?>
+              <li class="glide__slide">
+                <div class="testimonial-card">
+                    <div class="card text-center" style="width: 300px ; ">
+                      <img src="<?php echo 'img/product-images/'.$row['product_img'] ?>" class="card-img-top">
+                      <div class="card-body">
+                          <h5 class="card-title"><?php echo $row['product_name'];?></h5>
+                          <p class="card-text text-truncate"><?php echo $row['product_desc'];?></p>
+                          <a href="product-profile.php?view=<?php echo $row['product_id']?>"><button class="btn btn-block btn-outline-info" type="button" onclick="">View Product</button></a>
+                      </div>
+                    </div>
+                </div>
+              </li>
+              <?php endwhile; ?>
+            </ul>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+          </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                <svg class="bi bi-arrow-left-short" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
+                    <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+
+                <svg class="bi bi-arrow-right-short" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"/>
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"/>
+                  </svg>
+            </button>
+          </div>
         </div>
-        
+      </div>
+<!-- top 4 oil products ends -->
+
+<!-- top 4 organic products starts -->
+<section class="bg-light" style="position: relative; z-index: 10;">
+    <div class="container p-4 pt-4 " >
+        <div class="row   ">
+            
+                <div class="container m-4 pt-4">
+                <div class="section-title text-center mb-100">
+                        <p>Our top quality organic product products </p>
+                        <h4 class="display-4 font-weight-normal" >Top Organic Products</h4>
+                     </div>
+                </div>        
+        </div>
     </div>
 </section>
+<div class="container-fluid bg-info p-4">
+        <div class="glide" id="top-organic">
+          <div class="glide__track " style="height: auto;" data-glide-el="track">
+          <ul class="glide__slides" style="padding: 3em 0em 5em;" >
+          <?php
+              $mysqli = new mysqli('localhost', 'root', '', 'connect_roots');
+              $result = $mysqli->query("SELECT product_id, product_name, product_img, product_desc FROM products WHERE organic_top_products=1;");
+              while($row = $result->fetch_assoc()):
+          ?>
+              <li class="glide__slide">
+                <div class="testimonial-card">
+                    <div class="card text-center" style="width: 300px;">
+                      <img src="<?php echo 'img/product-images/'.$row['product_img'] ?>" class="card-img-top">
+                      <div class="card-body">
+                          <h5 class="card-title"><?php echo $row['product_name'];?></h5>
+                          <p class="card-text text-truncate"><?php echo $row['product_desc'];?></p>
+                          <a href="product-profile.php?view=<?php echo $row['product_id']?>"><button class="btn btn-block btn-outline-info" type="button" onclick="">View Product</button></a>
+                      </div>
+                    </div>
+                </div>
+              </li>
+              <?php endwhile; ?>
+            </ul>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+          </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                <svg class="bi bi-arrow-left-short" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
+                    <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+
+                <svg class="bi bi-arrow-right-short" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"/>
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"/>
+                  </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      </section>    
+<!-- top 4 organic products ends -->
 
 <div class="container-fluid  parallax text-light p-4" >
     <div class="shadow-lg container-fluid m-4" style="background-color: rgba(0,0,0,0.2); backdrop-filter: blur(5px);" >
@@ -509,9 +583,11 @@
          <p class="lead font-weight-lighter embod"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ducimus laboriosam accusamus corporis, porro deleniti tempora. Quas non at atque delectus. Dignissimos blanditiis recusandae cupiditate!</p>   
         </div>
         <div class="col-md-6" style="padding: 0;">
+        
+
 
             
-        <div class="glide">
+        <div class="glide" id="prod">
             <div class="glide__track" data-glide-el="track" >
               <ul class="glide__slides">
                   <li class="glide__slide"><img class="slide" src="img/gallery/fry.jpg" alt="" ></li>
@@ -526,6 +602,7 @@
                 <button class="glide__bullet" data-glide-dir="=1"></button>
                 <button class="glide__bullet" data-glide-dir="=2"></button>
                 <button class="glide__bullet" data-glide-dir="=3"></button>
+                <button class="glide__bullet" data-glide-dir="=4"></button>
               </div>
             <div class="glide__arrows" data-glide-el="controls">
                 <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
@@ -557,10 +634,10 @@
 <!-- testimonial -->
 
 
-<div class="container-fluid   ">
+<div class="container-fluid p-4  ">
                     <div class="text-center">
 
-                        <div class="section-title mb-100">
+                        <div class="section-title mb-100 pt-4">
                             <p >know what others are saying?</p>
                             <h4 class="display-4 font-weight-normal">Testimonials</h4>
                          </div> 
@@ -568,28 +645,62 @@
 
 <div class="glide " id="review">
   <div class="glide__track" style="height: auto;" data-glide-el="track">
-    <ul class="glide__slides p-4">
+    <ul class="glide__slides p-3 ">
       <li class="glide__slide">
         <div class="testimonial-card">
-          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fas fa-quote-right quote"></i></div>
+          <div class="text">Every product of ConnectRoots is pure and good for everyone. Right now I am using 3 to 4 products of ConnectRoots. 
+             <i class="fas fa-quote-right quote">
+             </i>
+            </div>
           
           
           
           <div class=" testimonial-footer">
             <div class="image" style="z-index: 3;">
-              <img src="img/icons/male.png" style="z-index: 2;" width="100px" alt="" srcset="">
+              <img src="https://lh5.googleusercontent.com/-m3KzsfTiW94/AAAAAAAAAAI/AAAAAAAAAAA/r0OiTLELXtA/w75-h75-p-rp-mo-br100/photo.jpg" style="z-index: 2;" width="100px" alt="" srcset="">
              
             </div>
             <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
               
-              <h3 class='lead font-weight-normal'  >Jane Doe</h3>
+              <h3 class='lead font-weight-normal'  >Sumit Shinde</h3>
             </div>
             <div class="star text-center">
             <img src="img/icons/star.png" width="15px" alt="">
             <img src="img/icons/star.png" width="15px" alt="">
             <img src="img/icons/star.png" width="15px" alt="">
             <img src="img/icons/star.png" width="15px" alt="">
-            <img src="img/icons/emptystar.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+
+
+
+            </div>
+            
+            
+          </div>
+      </li>
+      <li class="glide__slide">
+        <div class="testimonial-card">
+          <div class="text">Hi, I am happy to rate 5 star because had purchased the product from ConnectRoots  in Mumbai and it was superb and 100% organic.# 100%Organic
+# 100%Authenticate
+             <i class="fas fa-quote-right quote"></i></div>
+          
+          
+          
+          <div class=" testimonial-footer">
+            <div class="image" style="z-index: 3;">
+              <img src="https://lh5.googleusercontent.com/-VU0d7IM6xdU/AAAAAAAAAAI/AAAAAAAAAAA/B81uyiaDUfk/w75-h75-p-rp-mo-br100/photo.jpg" style="z-index: 2;" width="100px" alt="" srcset="">
+             
+            </div>
+            <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
+              
+              <h3 class='lead font-weight-normal'  > Arjunwadkar Narayan</h3>
+            </div>
+            <div class="star text-center">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" s width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
             
 
 
@@ -601,25 +712,27 @@
       </li>
       <li class="glide__slide">
         <div class="testimonial-card">
-          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fas fa-quote-right quote"></i></div>
+          <div class="text">This is best alternative to refined oil both in terms of taste and health. This has helped me reduce weight within less than a month.
+             <i class="fas fa-quote-right quote"></i></div>
           
           
           
           <div class=" testimonial-footer">
             <div class="image" style="z-index: 3;">
-              <img src="img/icons/male.png" style="z-index: 2;" width="100px" alt="" srcset="">
+              <img src="https://lh5.googleusercontent.com/-x8S0OBNmTvg/AAAAAAAAAAI/AAAAAAAAAAA/xz2439kb2AU/w75-h75-p-rp-mo-br100/photo.jpg" style="z-index: 2;" width="100px" alt="" srcset="">
              
             </div>
             <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
               
-              <h3 class='lead font-weight-normal'  >Jane Doe</h3>
+              <h3 class='lead font-weight-normal'  >Gaurav Nemade</h3>
             </div>
+
             <div class="star text-center">
             <img src="img/icons/star.png" width="15px" alt="">
             <img src="img/icons/star.png" width="15px" alt="">
             <img src="img/icons/star.png" width="15px" alt="">
-            <img src="img/icons/half.png" s width="15px" alt="">
-            <img src="img/icons/emptystar.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
             
 
 
@@ -631,18 +744,83 @@
       </li>
       <li class="glide__slide">
         <div class="testimonial-card">
-          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fas fa-quote-right quote"></i></div>
+          <div class="text"> I must say I have found a healthy and safe way to take care of my loved ones. Products are value for money. Completely organic. Service is good. Highly recommended.
+             <i class="fas fa-quote-right quote"></i></div>
           
           
           
           <div class=" testimonial-footer">
             <div class="image" style="z-index: 3;">
-              <img src="img/icons/male.png" style="z-index: 2;" width="100px" alt="" srcset="">
+              <img src="https://lh5.googleusercontent.com/-Z4aVdukTzdM/AAAAAAAAAAI/AAAAAAAAAAA/VFm5FDh41Os/w75-h75-p-rp-mo-br100/photo.jpg" style="z-index: 2;" width="100px" alt="" srcset="">
              
             </div>
             <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
               
-              <h3 class='lead font-weight-normal'  >Jane Doe</h3>
+              <h3 class='lead font-weight-normal'  >Piyush Marathe</h3>
+            </div>
+
+            <div class="star text-center">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            
+
+
+
+            </div>
+            
+            
+          </div>
+      </li>
+      <li class="glide__slide">
+        <div class="testimonial-card">
+          <div class="text text-justify">Great shop and great service bought groundnut cold pressed oil from here and its quality is great totally pure amd fresh, not like other brands 
+             <i class="fas fa-quote-right quote"></i></div>
+          
+          
+          
+          <div class=" testimonial-footer">
+            <div class="image" style="z-index: 3;">
+              <img src="https://lh3.googleusercontent.com/-nKjtSjz-utA/AAAAAAAAAAI/AAAAAAAAAAA/kxs51lrpICo/w75-h75-p-rp-mo-br100/photo.jpg" style="z-index: 2;" width="100px" alt="" srcset="">
+             
+            </div>
+            <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
+              
+              <h3 class='lead font-weight-normal'  >Nihar More</h3>
+            </div>
+
+            <div class="star text-center">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            <img src="img/icons/star.png" width="15px" alt="">
+            
+
+
+
+            </div>
+            
+            
+          </div>
+      </li>
+      <li class="glide__slide">
+        <div class="testimonial-card">
+          <div class="text">Great measures taken into quality control and safety of the product with a friendly environment to help make a purchse decision according to your needs and requirements. 👍👍👍
+             <i class="fas fa-quote-right quote"></i></div>
+          
+          
+          
+          <div class=" testimonial-footer">
+            <div class="image" style="z-index: 3;">
+              <img src="https://lh6.googleusercontent.com/-JFUl_5wjbEY/AAAAAAAAAAI/AAAAAAAAAAA/2vFv1TbqeOo/w75-h75-p-rp-mo-br100/photo.jpg" style="z-index: 2;" width="100px" alt="" srcset="">
+             
+            </div>
+            <div class="container-fluid d-flex justify-content-center text-light  " style="margin-top:3.3em;">
+              
+              <h3 class='lead font-weight-normal'  >Aaditya Wakade</h3>
             </div>
 
             <div class="star text-center">
@@ -802,7 +980,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.0.0/dist/glide.min.js"  crossorigin="anonymous"></script> 
         <script>
-            var glide = new Glide('.glide',{
+            var glide = new Glide('#prod',{
                                     type: 'carousel',
                                     startAt: 0,
                                     focusAt: 0,
@@ -856,6 +1034,71 @@
                                     }
                                     )
                  glide1.mount()
+
+
+                 var glide2 = new Glide('#top-oil',{
+                                    type: 'carousel',
+                                    startAt: 0,
+                                    
+                                    
+                                    gap: 20,
+                                    animationDuration:700,
+                                    peek: {
+                                                before: 70,
+                                                after: 70
+                                            },
+                                    perView: 4,
+                                    breakpoints:{
+                                        1200:{
+                                            perView:3
+                                        },
+                                        900:{
+                                            perView:2
+                                        },
+                                        600:{
+                                          perView:1
+                                        }
+                                    }
+                                    
+                                    
+                                    
+                                    }
+                                    )
+                 glide2.mount()
+
+
+                 var glide3 = new Glide('#top-organic',{
+                                    type: 'carousel',
+                                    startAt: 0,
+                                    
+                                    
+                                    gap: 20,
+                                    animationDuration:700,
+                                    peek: {
+                                                before: 70,
+                                                after: 70
+                                            },
+                                    perView: 4,
+                                    breakpoints:{
+                                        1200:{
+                                            perView:3
+                                        },
+                                        800:{
+                                            perView:2
+                                        },
+                                        600:{
+                                          perView:1
+                                        }
+                                    }
+                                    
+                                    
+                                    
+                                    }
+                                    )
+                 glide3.mount()
+
+
+
 
 
                         
